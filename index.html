@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="scores"><a href="highscores.html">View High Scores</a></section>
+  <section class="timer"> Time: <span class="timer"> 0 </span></section>
+  <section id="start-page">
+    <h1> Coding Quiz </h1>
+    <p>Questions must be answered within time frame. Answers that are incorrect will subtract 15 seconds from the timer. Good luck! </p>
+    <button id="start"> Start </button>
+  </section>
+
+  <section id="questions" class="hidden">
+    <h2 id="question-title"></h2>
+    <article id="choices" class="choices"></article>
+  </section>
+
+  <section id="end-page" class="hidden">
+    <h2>Finished!</h2>
+    <p> Your score is <span id="final-score"></span>.</p>
+    <p>
+      Enter initals: <input type="text" id="initials" max="3" />
+      <button id="submit">Submit</button>
+    </p>
+   
+  </section>
+
+</body>
+</html>
