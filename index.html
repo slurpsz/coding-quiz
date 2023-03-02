@@ -8,19 +8,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="scores"><a href="highscores.html">View High Scores</a></section>
-  <section class="timer"> Time: <span class="timer"> 0 </span></section>
+  <header>
+    <h2 id="scores"><a href="highscores.html">View High Scores</a></h2>
+    <h2 class="timer"> Time: <span class="timer"> 0 </span></h2>
+
+  </header>
+  <main>
   <section id="start-page">
     <h1> Coding Quiz </h1>
     <p>Questions must be answered within time frame. Answers that are incorrect will subtract 15 seconds from the timer. Good luck! </p>
     <button id="start"> Start </button>
   </section>
-
   <section id="questions" class="hidden">
     <h2 id="question-title"></h2>
-    <article id="choices" class="choices"></article>
+    <ul id="choices-btn" class="choices"></ul>
   </section>
-
+  
   <section id="end-page" class="hidden">
     <h2>Finished!</h2>
     <p> Your score is <span id="final-score"></span>.</p>
@@ -28,8 +31,10 @@
       Enter initals: <input type="text" id="initials" max="3" />
       <button id="submit">Submit</button>
     </p>
-   
+    
   </section>
-
+</main>
+<script src="./script.js"></script>
 </body>
+
 </html>
